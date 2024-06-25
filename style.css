@@ -1,0 +1,215 @@
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+
+
+.container {
+
+    padding: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+
+
+}
+
+header {
+    display: flex;
+    height: 70px;
+    padding: 10px;
+    align-items: center;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    margin-bottom: 0px;
+    z-index: 100;
+}
+
+header img {
+    margin-right: 10px;
+    height: 60px;
+    width: 60px;
+}
+
+h1 {
+    /*gddd*/
+}
+
+h1 samp {
+    color: #0056b3
+}
+
+main {
+    flex-grow: 1;
+    overflow: hidden;
+    /* Esconde el contenido que se desborda */
+    word-wrap: break-word;
+ 
+    padding: 10px;
+    display: flex;
+}
+
+.contenedorTextarea {
+    flex-grow: 1;
+    height: 100%;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    padding: 8px;
+    border-radius: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 90%;
+    margin-bottom: 0px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    font-size: 1.5rem;
+}
+
+.action{
+    display: flex;
+    justify-content: end;
+  
+    padding-right: 10px;
+}
+
+.action button{
+  
+    flex-direction: column;
+    width: 100px;
+    justify-content: center;
+    padding: 2px;
+    font-size: 1.2rem; 
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+  
+    justify-content: center;
+    padding: 10px;
+    font-size: 1.5rem;
+
+}
+
+
+
+
+
+.buttons button {
+    padding: 10px 20px;
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+    color: #ccc;
+}
+
+
+footer {
+    display: flex;
+    height: 50px;
+   
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    main {
+       flex-direction: column;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: row;
+    }
+    .buttons button{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    
+
+    textarea {
+        height: 80%;
+        font-size: 1.2rem;
+    }
+    
+}
+
+
+
+
+
+
+
+
+/* dialogo*/
+
+.dialog{
+
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 10000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.dialog form{
+     background: #ffffff;
+     padding: 8px;
+     border-radius: 10px;
+     font-size: 1.0rem;
+}
+.dialog form input{
+    font-size: 1rem;
+    padding: 6px;
+    border-radius: 7px;
+    margin-top: 10px;
+}
+.dialog form div{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+
+
+
+.dialog form button{
+   margin-top: 8px;
+   margin-left: 8px;
+   font-size: 1rem;
+   padding: 4px;
+}
